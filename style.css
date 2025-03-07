@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Windows Regular';
+    src: url('Windows Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #008080;
+    font-family: 'Windows Regular', 'MS Sans Serif', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* This makes the body a flex container */
+    justify-content: center; /* Centers the windows horizontally */
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 20px; /* Adds some space between the windows */
+}
+
+.window, .friendswindow {
+    width: 400px;
+    background: silver;
+    border: 2px solid black;
+    box-shadow: 4px 4px gray;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.title-bar {
+    background: navy;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+.radio-container {
+    position: absolute;
+    bottom: -130px; /* Move it up a little so it's inside the window */
+    left: -425px;
+    text-align: left;
+}
+
+.radio-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.radio-button img {
+    width: 32px;
+    height: 32px;
+}
+
+.radio-text {
+    margin-top: 5px;
+    font-size: 14px;
+}
